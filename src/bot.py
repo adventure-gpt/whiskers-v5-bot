@@ -185,7 +185,7 @@ Whiskers._kickoff = _kickoff_impl
 
 
 def _selfcheck() -> None:
-    """python run.py MODEL --selfcheck: load the model and score one empty observation, without RLBot."""
+    """python bot.py [MODEL_PATH] --selfcheck: load the weights and score one empty observation, without RLBot."""
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     ac = load_actor(Path(args[0] if args else HERE / "model.pt"))
     ob = ObsBuilder("cpu", ball_pred=ac.ball_pred, opp_inputs=getattr(ac, "opp_inputs", False))
