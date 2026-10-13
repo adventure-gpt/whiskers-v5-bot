@@ -1,0 +1,19 @@
+#:schema https://rlbot.org/schemas/agent.json
+[settings]
+name = "Whiskers"
+loadout_file = "loadout.toml"
+# development: run from this folder with the repository's virtual environment (the bot pack builds its own
+# executable from bot.spec)
+run_command = "..\\.venv\\Scripts\\python bot.py"
+run_command_linux = "../.venv/bin/python bot.py"
+agent_id = "adventure-gpt/whiskers/v5-33.3B"
+logo_file = "logo.png"
+hivemind = true
+
+[details]
+developer = "adventure-gpt"
+description = "A neural network trained from scratch with self-play reinforcement learning (PPO). One policy plays 1v1, 2v2 and 3v3 and drives all of its team's cars."
+fun_fact = "Trained on a single desktop PC; this version has played 33.3 billion game steps."
+source_link = "https://github.com/adventure-gpt/whiskers-v5-bot"
+language = "Python / PyTorch"
+tags = ["1v1", "teamplay"]

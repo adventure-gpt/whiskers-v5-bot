@@ -1,0 +1,4 @@
+rlbot>=2.0.0.beta
+numpy==2.*
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.4.1+cpu

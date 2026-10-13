@@ -1,0 +1,17 @@
+#:schema https://rlbot.org/schemas/match.json
+# A match for development: the bot against a human. Start RLBotServer, then start this match from the launcher
+# or with the rlbot Python package.
+[rlbot]
+launcher = "NoLaunch"
+auto_start_bots = true
+
+[mutators]
+match_length = "Unlimited"
+
+[[cars]]
+config_file = "src/bot.toml"
+team = 0
+
+[[cars]]
+type = "Human"
+team = 1
